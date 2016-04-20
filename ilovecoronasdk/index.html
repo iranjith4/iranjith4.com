@@ -1,5 +1,15 @@
 <html>
   <head>
+		<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-61718268-1', 'auto');
+ga('send', 'pageview');
+
+</script>
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Source Code Pro">
     <style>
@@ -26,6 +36,10 @@
 			maroon{
 				color : yellow
 			}
+			a {
+      text-decoration:none;
+			color : #bbbbbb
+   }
     </style>
   </head>
   <body>
@@ -34,17 +48,17 @@
 <p><yellow><red>print</red><white>(</white><blue>"Hello World !"</blue><white>)</white></p>
 <p><green>local</green> <white>sdk<white> <red>= require </red><blue>"coronaSDK"</blue></p>
 <p><red>print</red><white>(</white><blue>"Corona SDK is awesome."</blue><white>)</white>
-	<p><red>print</red><white>(</white><blue>"Develop 2D games 10X Faster !"</blue><white>)</white></p>
+	<p><red>print</red><white>(</white><blue>"Build 2D games 10X Faster !"</blue><white>)</white></p>
 	<p></p><br>
-	<p><red>print</red><white>(</white><blue>"Download Corona SDK at http://coronalabs.com"</blue><white>)</white></p>
+	<p><red>print</red><white>(</white><blue>"Download Corona SDK at <a href="http://coronalabs.com" target="_blank">http://coronalabs.com"</a></blue><white>)</white></p>
 	<p><maroon>downloadSDK()</maroon><p>
 	<p></p><br><br>
 
-	<p><green>function</green> <maroon>downloadSDK</maroon><white>(event)</white></br>&nbsp;&nbsp;<green>if</green> <white>(event.phase</white> <red>==</red> <blue>"downloaded"</blue><white>)</white></br>&nbsp;&nbsp;&nbsp;&nbsp;<green>return</green> <blue>"Awesome ! Enjoy Creating games." </blue><br>&nbsp;&nbsp;<green>else</green></br>&nbsp;&nbsp;&nbsp;&nbsp;<green>return</green> <blue>"Download at http://coronalabs.com"</blue></br>&nbsp;&nbsp;<green>end</br>end</green>
+	<p><green>function</green> <maroon>downloadSDK</maroon><white>(event)</white></br>&nbsp;&nbsp;<green>if</green> <white>(event.phase</white> <red>==</red> <blue>"downloaded"</blue><white>)</white></br>&nbsp;&nbsp;&nbsp;&nbsp;<green>return</green> <blue>"Awesome ! Enjoy Creating games." </blue><br>&nbsp;&nbsp;<green>else</green></br>&nbsp;&nbsp;&nbsp;&nbsp;<green>return</green> <blue>"Download at <a href = "http://coronalabs.com" target = "_blank">http://coronalabs.com"</a></blue></br>&nbsp;&nbsp;<green>end</br>end</green>
 
 	</br></br></br>
 
-	<p><comment>-- This site is no way in related with CoronaLabs or Perk.com Inc.</br>-- This site is soley made by Corona Fan !</br>-- Want to say Hi ? mail to <a href="mailto:ranjith@ilovecoronasdk.com">ranjith@ilovecoronasdk.com</comment></p>
+	<p><comment>-- This site is no way in related with CoronaLabs or Perk.com Inc.</br>-- This site is soley made by Corona Fan !</br>-- Want to say Hi ? mail to <a href="mailto:ranjith@ilovecoronasdk.com" >ranjith@ilovecoronasdk.com</comment></p>
 </div>
 <div>
 	<img src = "../public/images/ilovecoronasdk.png" width = 200px>
